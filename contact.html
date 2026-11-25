@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tell SeeSolar which planet you enjoyed exploring.">
+    <title>Contact SeeSolar</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo" href="index.html">
+                <span>SeeSolar</span>
+            </div>
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="planetpages/mercury.html">Mercury</a></li>
+                    <li><a href="planetpages/venus.html">Venus</a></li>
+                    <li><a href="planetpages/earth.html">Earth</a></li>
+                    <li><a href="planetpages/mars.html">Mars</a></li>
+                    <li><a href="planetpages/jupiter.html">Jupiter</a></li>
+                    <li><a href="planetpages/saturn.html">Saturn</a></li>
+                    <li><a href="planetpages/uranus.html">Uranus</a></li>
+                    <li><a href="planetpages/neptune.html">Neptune</a></li>
+                    <li><a class="nav-cta" href="contact.html" aria-current="page">Share your favorite planet!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="page-shell">
+        <section class="content-section" aria-labelledby="contact-title">
+            <p class="eyebrow">Feedback</p>
+            <h1 id="contact-title">Got Feedback?</h1>
+            <p>Did something here catch your attention? Is there anything you think we missed, or that you would like to see more of?</p>
+                <p><i>We'd love to hear from you!</i></p>
+            <form class="contact-form" action="contact.php" method="post">
+                <div class="form-field">
+                    <label for="full-name">Your name</label>
+                    <input id="full-name" name="full_name" type="text" autocomplete="name" maxlength="80" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+                </div>
+                <div class="form-field">
+                    <label for="favorite-planet">Favorite planet</label>
+                    <select id="favorite-planet" name="favorite_planet" required>
+                        <option value="" selected disabled>Choose a planet</option>
+                        <option>Mercury</option><option>Venus</option><option>Earth</option><option>Mars</option>
+                        <option>Jupiter</option><option>Saturn</option><option>Uranus</option><option>Neptune</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message" maxlength="1000" required></textarea>
+                </div>
+                <div class="form-field form-field-wide">
+                    <label class="checkbox-label"><input name="consent" type="checkbox" value="yes" required> <span>I agree to send this feedback to SeeSolar.</span></label>
+                </div>
+                <div class="form-field form-field-wide">
+                    <p class="form-note">This demo form displays your message on the confirmation page and does not store or email it.</p>
+                    <button type="submit">Send feedback</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer"><p>SeeSolar · Feedback</p><p><a href="index.html">Back to all planets</a></p></footer>
+</body>
+</html>
